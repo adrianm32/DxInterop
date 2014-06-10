@@ -25,7 +25,6 @@ using System.Runtime.InteropServices.ComTypes;
 
 namespace DxInterop
 {
-
     public partial class DXInteropApp : Application
     {
         public bool TickPriorityTestingMode = false; //flag to test tick priority changes to address input message starvation.
