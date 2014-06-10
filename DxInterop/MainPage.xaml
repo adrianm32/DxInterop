@@ -1,0 +1,91 @@
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="1366"
+    d:DesignHeight="768">
+
+  <Page.Resources>
+    <Style x:Key="Simple_AppBarStyle" TargetType="AppBar">
+      <Setter Property="Background" Value="Blue"/>
+      <Setter Property="Height" Value="100"/>
+    </Style>
+  </Page.Resources>
+
+  <Page.TopAppBar>
+    <AppBar x:Name="topAppBar" Style="{StaticResource Simple_AppBarStyle}">
+      <StackPanel Orientation="Horizontal">
+        <Button x:Name="topAppBarButton1" Content="Button1">
+          <ToolTipService.ToolTip>
+            <ToolTip>
+              <TextBlock>ToolTip on a Button on an AppBar</TextBlock>
+            </ToolTip>
+          </ToolTipService.ToolTip>
+        </Button>
+        <Button x:Name="topAppBarButton2" Content="Button2"/>
+        <Button x:Name="topAppBarButton3" Content="Button3"/>
+        <ComboBox x:Name="topAppBarComboBox" Height="50" Width="150">
+          <ComboBoxItem>Item1</ComboBoxItem>
+          <ComboBoxItem>Item2</ComboBoxItem>
+          <ComboBoxItem>Item3</ComboBoxItem>
+          <ComboBoxItem>Item4</ComboBoxItem>
+          <ComboBoxItem>Item5</ComboBoxItem>
+          <ComboBoxItem>Item6</ComboBoxItem>
+        </ComboBox>
+        <RadioButton x:Name="topAppBarRadioButton1" Content="RadioButton1"/>
+        <RadioButton x:Name="topAppBarRadioButton2" Content="RadioButton2"/>
+        <CheckBox x:Name="topAppBarCheckBox1" Content="CheckBox1"/>
+        <CheckBox x:Name="topAppBarCheckBox2" Content="CheckBox2"/>
+        <FlipView x:Name="topAppBarFlipView" Height="80" Width="300">
+          <FlipViewItem>Item1</FlipViewItem>
+          <FlipViewItem>Item2</FlipViewItem>
+          <FlipViewItem>Item3</FlipViewItem>
+          <FlipViewItem>Item4</FlipViewItem>
+          <FlipViewItem>Item5</FlipViewItem>
+          <FlipViewItem>Item6</FlipViewItem>
+        </FlipView>
+        <TextBox x:Name="topAppBarTextBox" Height="50" Width="100"/>
+      </StackPanel>
+    </AppBar>
+  </Page.TopAppBar>
+
+  <Page.BottomAppBar>
+    <AppBar x:Name="bottomAppBar" Style="{StaticResource Simple_AppBarStyle}">
+      <StackPanel Orientation="Horizontal">
+        <Button x:Name="bottomAppBarButton1" Content="Button1">
+          <ToolTipService.ToolTip>
+            <ToolTip>
+              <TextBlock>ToolTip on a Button on an AppBar</TextBlock>
+            </ToolTip>
+          </ToolTipService.ToolTip>
+        </Button>
+        <Button x:Name="bottomAppBarButton2" Content="Button2"/>
+        <Button x:Name="bottomAppBarButton3" Content="Button3"/>
+        <ComboBox x:Name="bottomAppBarComboBox" Height="50" Width="150">
+          <ComboBoxItem>Item1</ComboBoxItem>
+          <ComboBoxItem>Item2</ComboBoxItem>
+          <ComboBoxItem>Item3</ComboBoxItem>
+          <ComboBoxItem>Item4</ComboBoxItem>
+          <ComboBoxItem>Item5</ComboBoxItem>
+          <ComboBoxItem>Item6</ComboBoxItem>
+        </ComboBox>
+        <RadioButton x:Name="bottomAppBarRadioButton1" Content="RadioButton1"/>
+        <RadioButton x:Name="bottomAppBarRadioButton2" Content="RadioButton2"/>
+        <CheckBox x:Name="bottomAppBarCheckBox1" Content="CheckBox1"/>
+        <CheckBox x:Name="bottomAppBarCheckBox2" Content="CheckBox2"/>
+        <FlipView x:Name="bottomAppBarFlipView" Height="80" Width="300">
+          <FlipViewItem>Item1</FlipViewItem>
+          <FlipViewItem>Item2</FlipViewItem>
+          <FlipViewItem>Item3</FlipViewItem>
+          <FlipViewItem>Item4</FlipViewItem>
+          <FlipViewItem>Item5</FlipViewItem>
+          <FlipViewItem>Item6</FlipViewItem>
+        </FlipView>
+        <TextBox x:Name="bottomAppBarTextBox" Height="50" Width="100"/>
+      </StackPanel>
+    </AppBar>
+  </Page.BottomAppBar>
+
+</Page>
